@@ -1,0 +1,22 @@
+{
+  "name": "circom-uniplonk",
+  "version": "0.0.1",
+  "description": "PlonK with Universal Verifier",
+  "main": "index.js",
+  "author": "Sora Suegami",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.3.0",
+    "circom-pairing": "https://github.com/yi-sun/circom-pairing.git",
+    "keccak-circom": "https://github.com/vocdoni/keccak256-circom.git",
+    "nodemon": "^2.0.22",
+    "snarkjs": "^0.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
